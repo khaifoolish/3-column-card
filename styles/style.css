@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  padding-left: 50px;
+  padding-top: 45px;
+}
+
+.sedans {
+  background-color: #e28525;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.suvs {
+  background-color: #016972;
+}
+
+.luxury {
+  background-color: #00403f;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.heading {
+  font-size: 32px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.des {
+  color: white;
+  font-size: 16px;
+  opacity: 0.6;
+  margin-top: 40px;
+  width: 200px;
+  text-align: left;
+}
+
+.button {
+  margin-top: 70px;
+  width: 150px;
+  height: 50px;
+  border-radius: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: white;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.sedans-btn {
+  color: #e28525;
+}
+
+.suvs-btn {
+  color: #016972;
+}
+
+.luxury-btn {
+  color: #00403f;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    grid-template-columns: 200px 200px 200px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .des {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .sedans-btn {
+    margin-top: 70px;
+  }
+
+  .luxury-btn {
+    margin-top: 70px;
+  }
+
+  .button {
+    font-size: 16px;
+    width: 130px;
+    height: 40px;
+  }
+  .sedans,
+  .suvs,
+  .luxury {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .container {
+    grid-template-columns: 300px;
+  }
+
+  .sedans,
+  .suvs,
+  .luxury {
+    height: 400px;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .des {
+    margin-top: 15px;
+  }
+
+  .button {
+    margin-top: 25px;
+    width: 120px;
+    height: 35px;
+  }
+}
